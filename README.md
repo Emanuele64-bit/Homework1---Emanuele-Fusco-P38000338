@@ -26,12 +26,12 @@ Then rebuild the docker image through the provided script:
 ```sh
 ./docker_build_image.sh <${image_name}>
 ```
-:warning: **Warning:** Be sure that this is the only export path for IGN GAZEBO. See the Dockerfile for more details.
+>:warning: **Warning:** Be sure that this is the only export path for IGN GAZEBO. Refer to the Dockerfile for more details.
 
-💡 **Tip:** after the building of the image, it is worth to delete the previous one by recalling the following command:
-```sh
-docker rmi <image_id>
-```
+>💡 **Tip:** after the building of the image, it is worth to delete the previous one by running the following command:
+>```sh
+>docker rmi <image_id>
+>```
 
 ## :rocket: Bring up Armando
 Once the image is updated, download this repository in the image folder:
@@ -39,11 +39,11 @@ Once the image is updated, download this repository in the image folder:
 git clone https://github.com/Emanuele64-bit/Homework1---Emanuele-Fusco-P38000338.git
 ```
 ### :hammer: Build the packages
-Enter in ros2 workspace and build the following packages using `colcon build` and selecting the required packages:
+Enter in the ROS 2 workspace and build the following packages using `colcon build` and selecting the required packages:
 ```sh
 colcon build --packages-select armando_description armando_gazebo armando_controller
 ```
-Hence, `source` the code:
+Hence, `source` the workspace:
 ```sh
 source install/setup.bash
 ```
@@ -64,17 +64,17 @@ ros2 launch armando_gazebo armando_world.launch.py ctrl:=0
 ```sh
 ros2 launch armando_gazebo armando_world.launch.py ctrl:=1
 ```
-:mag: ***Note:*** by default is set on the position controller.
+>:mag: ***Note:*** by default is set on the position controller.
 
 ### :camera: Armando Camera
-Open an other terminal and write the following command:
+Open another terminal and write the following command:
 ```sh
 ros2 run rqt_image_view rqt_image_view
 ```
 Once the `rqt_image_view` window is opened, select `\videocamera` and enjoy the horizon view.
 
 ### :white_check_mark: Armando Controller
-Once the robot is in the Gazebo world, open an other terminal and `source` the code:
+Once the robot is in the Gazebo world, open an other terminal and `source` the workspace:
 ```sh
 source install/setup.bash
 ```
@@ -87,4 +87,4 @@ ros2 run armando_controller armando_controller_node 0
 ```sh
 ros2 run armando_controller armando_controller_node 1
 ```
-:mag: ***Note:*** also in this case the default item is the position controller. Furthermore, the controller will take only the first character of the first argument and, if it is not an expected one, it will close the node.
+>:mag: ***Note:*** also in this case the default item is the position controller. Furthermore, the controller will take only the first character of the first argument and, if it is not an expected one, it will close the node.
