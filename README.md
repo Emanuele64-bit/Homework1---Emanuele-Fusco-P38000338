@@ -69,7 +69,7 @@ ros2 run rqt_image_view rqt_image_view
 Once the rqt window is opened, select `\videocamera` and enjoy the view.
 
 ### :white_check_mark: Armando Controller
-Once the robot is in the Gazebo world, in an other terminal run the `armando_controller_node` by specifying the controller type and setting the argument as follows:
+Once the robot is in the Gazebo world, in an other terminal run the `armando_controller_node` by specifying the controller type through the proper argument as follows:
 * **position controller**:
 ```sh
 ros2 run armando_controller armando_controller_node 0
@@ -78,4 +78,4 @@ ros2 run armando_controller armando_controller_node 0
 ```sh
 ros2 run armando_controller armando_controller_node 1
 ```
-:mag: ***Note:*** also in this case the default item is the position controller.
+:mag: ***Note:*** also in this case the default item is the position controller. Furthermore, the controller will take only the first character of the first argument and, if it is not an expected one, it will close the node.
