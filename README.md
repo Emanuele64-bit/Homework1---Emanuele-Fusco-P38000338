@@ -27,6 +27,10 @@ Then rebuild the docker image through the provided script:
 ./docker_build_image.sh <${image_name}>
 ```
 :warning: **Warning:** Be sure that this is the only export path for IGN GAZEBO. See the Dockerfile for more details.
+:bulb: **Tip:** after the building of the image, it is worth to delete the previous one by recalling the following command:
+```sh
+docker rmi <image_id>
+```
 
 ## :rocket: Bring up Armando
 Once the image is updated, download this repository in the image folder:
