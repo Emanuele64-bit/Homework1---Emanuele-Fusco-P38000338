@@ -26,7 +26,7 @@ Then rebuild the docker image through the provided script:
 ```sh
 ./docker_build_image.sh <${image_name}>
 ```
-:mag: See the Dockerfile for more details.
+:warning: **Warning:** Be sure that this is the only export path for IGN GAZEBO. See the Dockerfile for more details.
 
 ## :rocket: Bring up Armando
 Once the image is updated, download this repository in the image folder:
@@ -59,9 +59,9 @@ ros2 launch armando_gazebo armando_world.launch.py ctrl:=0
 ```sh
 ros2 launch armando_gazebo armando_world.launch.py ctrl:=1
 ```
-:mag: ***Note*** by default is set on the position controller.
+:mag: ***Note:*** by default is set on the position controller.
 
-#### :camera: Armando Camera
+### :camera_with_flash: Armando Camera
 Open an other terminal and write the following command to see what the camera shows:
 ```sh
 ros2 run rqt_image_view rqt_image_view
@@ -77,4 +77,4 @@ ros2 run armando_controller armando_controller_node 0
 ```sh
 ros2 run armando_controller armando_controller_node 1
 ```
-:mag: ***Note*** also in this case the default item is the position controller.
+:mag: ***Note:*** also in this case the default item is the position controller.
