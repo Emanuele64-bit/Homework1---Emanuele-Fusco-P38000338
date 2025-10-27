@@ -1,5 +1,8 @@
 # :robot: Homework 1: Bring Up Your Robot
-The goal of this project is to design and simulate a four-degrees-of-freedom robotic manipulator, named **Armando**, within the ROS 2 environment using **Gazebo** and **Rviz** simulation software. 
+Made by: 
+:construction_worker_man: Emanuele Fusco, P38000338
+
+:dart: The goal of this project is to design and simulate a four-degrees-of-freedom robotic manipulator, named **Armando**, within the ROS 2 environment using **Gazebo** and **Rviz** simulation software. 
 Starting from the provided base package **armando_description**, the robot description was modified and extended to include visualization and physical modeling in Rviz and Gazebo, and later the integration of sensors and controllers.
  
 ## :hammer_and_wrench: Dockerfile modification
@@ -24,12 +27,12 @@ Then rebuild the docker image through the provided script:
 ```sh
 ./docker_build_image.sh <${image_name}>
 ```
-:warning: ***Warning*** Be sure that this is the only export path for IGN GAZEBO.
+:mag: See the Dockerfile for more details.
 
 ## :rocket: Bring up Armando
 Once the image is updated, download this repository in the image folder:
 ```sh
-git clone https://github.com/I-FANTASTICI-4/Homework1.git
+git clone https://github.com/Emanuele64-bit/Homework1---Emanuele-Fusco-P38000338.git
 ```
 ### :hammer: Build the packages
 Enter in ros2 workspace and build the following packages using `colcon build` and selecting the required packages:
