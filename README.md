@@ -66,7 +66,7 @@ Open an other terminal and write the following command:
 ```sh
 ros2 run rqt_image_view rqt_image_view
 ```
-Once the `rqt_image_view` window is opened, select `\videocamera` and enjoy the view.
+Once the `rqt_image_view` window is opened, select `\videocamera` and enjoy the horizon view.
 
 ### :white_check_mark: Armando Controller
 Once the robot is in the Gazebo world, open an other terminal and `source` the code:
