@@ -1,5 +1,5 @@
 # :robot: Homework 1: Bring Up Your Robot
-:construction_worker: **Emanuele Fusco**, __P38000338__
+:construction_worker: **Emanuele Fusco**, *P38000338*
 
 :dart: The goal of this project is to design and simulate a four-degrees-of-freedom robotic manipulator, named **Armando**, within the ROS 2 environment using **Gazebo** and **Rviz** simulation software. 
 Starting from the provided base package **armando_description**, the robot description was modified and extended to include visualization and physical modeling in Rviz and Gazebo, and later the integration of sensors and controllers.
@@ -66,10 +66,14 @@ Open an other terminal and write the following command:
 ```sh
 ros2 run rqt_image_view rqt_image_view
 ```
-Once the rqt window is opened, select `\videocamera` and enjoy the view.
+Once the `rqt_image_view` window is opened, select `\videocamera` and enjoy the view.
 
 ### :white_check_mark: Armando Controller
-Once the robot is in the Gazebo world, in an other terminal run the `armando_controller_node` by specifying the controller type through the proper argument as follows:
+Once the robot is in the Gazebo world, open an other terminal and `source` the code:
+```sh
+source install/setup.bash
+```
+Therefore, run the `armando_controller_node` by specifying the controller type through the proper argument as follows:
 * **position controller**:
 ```sh
 ros2 run armando_controller armando_controller_node 0
