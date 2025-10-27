@@ -54,7 +54,7 @@ Spawn Armando in Rviz with the correct configuration using the `ros2 launch` com
 ros2 launch armando_description armando_display.launch.py
 ```
 
-### :white_check_mark: Gazebo
+### :earth: Gazebo
 Run the `armando_world.launch.py` in Gazebo by specifying the controller you want to use through the argument `ctrl`:
 * **position controller**:
 ```sh
@@ -73,7 +73,7 @@ ros2 run rqt_image_view rqt_image_view
 ```
 Once the `rqt_image_view` window is opened, select `\videocamera` and enjoy the horizon view.
 
-### :white_check_mark: Armando Controller
+### :video_game: Armando Controller
 Once the robot is in the Gazebo world, open an other terminal and `source` the workspace:
 ```sh
 source install/setup.bash
