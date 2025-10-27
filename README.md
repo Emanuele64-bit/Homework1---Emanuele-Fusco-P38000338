@@ -61,7 +61,7 @@ ros2 launch armando_gazebo armando_world.launch.py ctrl:=1
 ```
 :mag: ***Note:*** by default is set on the position controller.
 
-### :camera_with_flash: Armando Camera
+### :camera: Armando Camera
 Open an other terminal and write the following command to see what the camera shows:
 ```sh
 ros2 run rqt_image_view rqt_image_view
