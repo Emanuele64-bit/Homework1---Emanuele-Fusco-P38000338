@@ -54,7 +54,7 @@ Spawn Armando in Rviz with the correct configuration using the `ros2 launch` com
 ros2 launch armando_description armando_display.launch.py
 ```
 
-### :earth: Gazebo
+### :earth_africa: Gazebo
 Run the `armando_world.launch.py` in Gazebo by specifying the controller you want to use through the argument `ctrl`:
 * **position controller**:
 ```sh
