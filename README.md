@@ -1,6 +1,5 @@
 # :robot: Homework 1: Bring Up Your Robot
-Made by: 
-:construction_worker_man: Emanuele Fusco, P38000338
+:construction_worker: **Emanuele Fusco**, __P38000338__
 
 :dart: The goal of this project is to design and simulate a four-degrees-of-freedom robotic manipulator, named **Armando**, within the ROS 2 environment using **Gazebo** and **Rviz** simulation software. 
 Starting from the provided base package **armando_description**, the robot description was modified and extended to include visualization and physical modeling in Rviz and Gazebo, and later the integration of sensors and controllers.
