@@ -78,13 +78,13 @@ Once the robot is in the Gazebo world, open an other terminal and `source` the w
 ```sh
 source install/setup.bash
 ```
-Therefore, run the `armando_controller_node` by specifying the controller type through the proper argument as follows:
+Therefore, run the `arm_controller_node` by specifying the controller type through the proper argument as follows:
 * **position controller**:
 ```sh
-ros2 run armando_controller armando_controller_node 0
+ros2 run armando_controller arm_controller_node 0
 ```
 * **trajectory controller**:
 ```sh
-ros2 run armando_controller armando_controller_node 1
+ros2 run armando_controller arm_controller_node 1
 ```
 >:mag: ***Note:*** also in this case the default item is the position controller. Furthermore, the controller will take only the first character of the first argument and, if it is not an expected one, it will close the node.
